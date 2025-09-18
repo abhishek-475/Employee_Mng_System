@@ -27,7 +27,7 @@ const Login = () => {
           <input type="password" placeholder="Enter your password" value={password}
             onChange={(e) => setPassword(e.target.value)}
             className='outline-none border-2 border-emerald-600 bg-transparent text-xl py-3 px-5 mt-3 rounded-full placeholder:text-gray-400' required />
-          <button className='text-white outline-none border-2 border-emerald-600 bg-transparent bg-emerald-500 text-xl py-3 px-5 mt-7 rounded-full placeholder:text-white'>Login</button>
+          <button className='text-white outline-none border-2 border-emerald-600  bg-emerald-500 text-xl py-3 px-5 mt-7 rounded-full placeholder:text-white'>Login</button>
         </form>
       </div>
     </div>
