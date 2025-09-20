@@ -1,12 +1,46 @@
-# React + Vite
+Employee Task Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A task management system for admins and employees where tasks can be created, assigned, and tracked. Admins can assign tasks to employees, while employees can view their tasks and task statuses. The system manages task counts (active, new, completed, failed) and persists data in LocalStorage.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Frontend: React.js, Tailwind CSS, React Router
+
+Database: LocalStorage (for demo)
+
+Other: Context API for state management, LocalStorage for persistence 
+
+
+
+
+Key Features:
+
+Admin Dashboard:
+
+-Create and assign tasks to employees
+
+-Track task counts for each employee
+
+-View all tasks of all employees
+
+Employee Dashboard:
+
+-View assigned tasks with status indicators
+
+-Task filtering and tracking of active, completed, failed, and new tasks
+
+Task Management:
+
+-Add tasks with title, description, date, category, and assignee
+
+-Update task counts dynamically
+
+-Persist tasks using LocalStorage for demo
+
+Authentication:
+
+-Admin and Employee login
+
+-Role-based dashboards
