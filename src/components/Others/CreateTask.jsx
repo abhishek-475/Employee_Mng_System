@@ -17,22 +17,22 @@ const CreateTask = () => {
     const submitHandler = (e) => {
         e.preventDefault();
 
+
+
         setNewTask({ taskTitle, taskDescription: taskDesc, taskDate, category, assignTo, active: false, newTask: true, failed: false, completed: false })
 
-    //    const data =JSON.parse(localStorage.getItem('employees'))
-        const data = userData.employees
-        console.log(data);
-        
 
-       data.forEach(function(ele){
-        if(assignTo == ele.firstName){
-            ele.tasks.push(newTask)
-            ele.taskCounts.newTask += 1;
-            
-        }
-       })
-       setUserData(data)
-       localStorage.setItem("employees", JSON.stringify(data))
+        userData.forEach(function (ele) {
+            if (assignTo == ele.firstName) {
+                ele.tasks.push(newTask)
+                ele.taskCounts.newTask += 1;
+
+            }
+        })
+        setUserData(userData)
+        console.log(userData);
+
+
 
         setTaskTitle('')
         setTaskDate('')
