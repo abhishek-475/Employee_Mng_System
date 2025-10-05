@@ -44,3 +44,17 @@ Authentication:
 -Admin and Employee login
 
 -Role-based dashboards
+
+
+
+
+Login Credentials
+
+Admin
+
+admin@example.com - 123
+
+Employee
+
+employeename@example.com - 123
+

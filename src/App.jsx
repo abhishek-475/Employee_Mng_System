@@ -34,6 +34,7 @@ function App() {
       const employee = userData?.find((e) => email === e.email && password === e.password)
       if (employee) {
         setUser('employee')
+        setLoggedInUser(employee)
         localStorage.setItem('loggedInUser', JSON.stringify({ role: 'employee', data: employee }))
       } else {
         alert("Invalid Credentials")
